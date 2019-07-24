@@ -1,0 +1,179 @@
+:root{
+    --text-color: 
+}
+
+.clan-bars{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.progress7{
+    color: purple;
+}
+
+.math{
+    border: 2px solid #F4DE6E;
+    margin-top: 10%;
+}
+
+.classpictures {
+    width: 100%;
+    height: auto;
+}
+
+.cards{
+    text-align: center;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body{font-family: Verdana, sans-serif;}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #458E45;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.d-block{
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 50px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #458E45  ;
+  color: white !important
+}
+
+.eventrainy {
+  background: url(https://media0.giphy.com/media/3oz8xRTa6sxcMaswtW/source.gif) no-repeat center fixed; 
+  background-size: cover;
+}
+
+.eventsunny {
+  background: url(https://d2zp5xs5cp8zlg.cloudfront.net/image-10028-800.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
+
+.eventcloudy {
+  background: url(https://media.mnn.com/assets/images/2018/08/CollectionOfCloudsAgainstABlueSky.jpg.653x0_q80_crop-smart.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.list-group-item{
+  color:#70358C
+}
+
+.display-5,.staff{
+  color:#D8784B
+}
+
+.display-6,.yoyo{
+  color:#2A3593
+}
+
+.yoyo {
+  color: #2A3593
+}
+
+.bodytext {
+  font-size: 28px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.parallax { 
+  /* The image used */
+  background-image: url("https://www.thoughtco.com/thmb/NZ_NhT9hLXua7o1XY3VfaoN2SQE=/4901x2757/smart/filters:no_upscale()/group-of-school-kids-raising-hands-in-classroom-860597978-5ab59c403418c600365665f3.jpg");
+
+  /* Set a specific height */
+  height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.think{
+  
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
