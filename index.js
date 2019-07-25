@@ -20,12 +20,57 @@ $(document).ready(function() {
     console.log("ready!");
     $("li.list-group-item").click(hi); 
   })
+  $("div.math").css("display","none");
+  $("div.math").removeClass("class1");
+  $("div.math").removeClass("class2");
+  $(window).scroll(function(){
+    var scroll=$(window).scrollTop();
+    if(scroll>= 500){  //1232
+        $("div.math").css("display","block");
+        $("div.math:even").addClass("class2");
+        $("div.math:odd").addClass("class1");
+    }
+    else{
+        $("div.math").removeClass("class2");
+        $("div.math").removeClass("class1");
+        $("div.math").css("display","none");
+    }
+  });
+  
 });
 
 function hi() {
     $("li.list-group-item").removeClass("active");
     $(this).addClass("active");
 }
+
+$(window).on("load",function() {
+    $(window).scroll(function() {
+      var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+      $(".fade").each(function() {
+    
+        var objectBottom = $(this).offset().top + $(this).outerHeight();
+        
+    });
+    })
+});
+
+$(window).on("load",function() {
+    $(window).scroll(function() {
+      var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+      $(".fade").each(function() {
+        /* Check the location of each desired element */
+        var objectBottom = $(this).offset().top + $(this).outerHeight();
+        
+        /* If the element is completely within bounds of the window, fade it in */
+        if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+          if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+        } else { //object goes out of view (scrolling up)
+          if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+        }
+      });
+    }).scroll(); //invoke scroll-handler on page-load
+  });
 
 // window.onload = function(){
   

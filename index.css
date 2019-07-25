@@ -5,8 +5,8 @@
 .clan-bars{
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .progress7{
@@ -27,7 +27,9 @@
     text-align: center;
 
 }
-
+.redbackground{
+  background-color:#AA2525
+}
 .center {
     display: block;
     margin-left: auto;
@@ -125,6 +127,12 @@ body{font-family: Verdana, sans-serif;}
   width: 50%;
 }
 
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .list-group-item{
   color:#70358C
 }
@@ -138,7 +146,10 @@ body{font-family: Verdana, sans-serif;}
 }
 
 .yoyo {
-  color: #2A3593
+  color: white
+}
+.hi5{
+  color:#70358C
 }
 
 .bodytext {
@@ -160,20 +171,278 @@ body{font-family: Verdana, sans-serif;}
   background-size: cover;
 }
 
+.parallax2 { 
+  /* The image used */
+  background-image: url("https://i.etsystatic.com/14058895/r/il/7289dd/1284073165/il_fullxfull.1284073165_tdv6.jpg");
+
+  /* Set a specific height */
+  height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax3 { 
+  /* The image used */
+  background-image: url("https://www.fourseasons.com/content/dam/fourseasons/images/web/NYF/NYF_1371_aspect16x9.jpg");
+
+  /* Set a specific height */
+  height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .think{
-  
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 7%;
+}
+
+.classroom{
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 7%;
+}
+
+.student{
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 7%;
+}
+
+.class{
+  background-color: #454545;
+  color: white;
+}
+
+.jumbotron{
+
+}
+
+#lightgrey {
+  background-color: #DAE7F9;
+}
+
+#lightred {
+  background-color: #FFD8CC;
+}
+
+.jumbotronclass{
+  background-color: #f7e795;
+}
+
+#lightorange{
+  background-color: #F7E6DE;
+}
+
+.darkyellow{
+  color: #35342D;
+}
+
+.bodyhome{
+  background-color: #F9F4FF;
+}
+
+.quotes{
+  color: white;
+}
+
+.mascot{
+  color: #70358C;
+}
+.fade {
+  margin: 20px;
+  padding: 20px;
+
+  opacity: 1;
+}
+
+.purplebackground {
+  background-color: #70358C;
+}
+
+.orangebackground {
+  background-color: #D8784B;
+}
+
+.greenbackground{
+  background-color:#458E45;
+}
+
+.bluebackground {
+  background-color: #2A3593;
+}
+
+.yellowbackground {
+  background-color: #F4DE6E;
+}
+
+.whitetext {
+  color: white;
+}
+
+.clubs{
+  margin: 100px;
+  padding: 100px;
+  background-color: #2A3593;
+  color: white;
+}
+
+.dormlife{
+  margin: 100px;
+  padding: 100px;
+  background-color: #AA2525;
+  color: white;
+}
+
+.hrwhite {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+  }
+
+.class1{
+  position: relative;
+  -webkit-animation-name: math;
+  -webkit-animation-duration: 4s;
+  animation-name: math;
+  animation-duration: 6s;
+}
+.display-7{
+  color:#AA2525
+}
+
+@keyframes math{
+  0% {right:-100%}
+  25%{right: 0px}
+}
+
+.class2{
+  position: relative;
+  -webkit-animation-name: science;
+  -webkit-animation-duration: 4s;
+  animation-name: science;
+  animation-duration: 6s;
+}
+
+.navtitle {
+  color: #EFCC90;
+}
+
+.subtitle {
+  font-size: 35px;
+}
+
+.classtext {
+  font-size: 
+}
+
+@keyframes science{
+  0% {left:-100%}
+  25%{left: 0px}
 }
 
 /* Add media queries for smaller screens */
+
+@media screen and (max-width:1500px) {
+  .weekdays li, .days li {width: 13.1%;}
+  .bodytext{
+    font-size: 27px;
+  }
+  .subtitle {
+    font-size: 35npx;
+  }
+  .clubs{
+    margin: 70px;
+    padding: 70px;
+  }
+  
+  .dormlife{
+    margin: 70px;
+    padding: 70px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .weekdays li, .days li {width: 13.1%;}
+  .bodytext{
+    font-size: 25px;
+  }
+  .subtitle {
+    font-size: 32npx;
+  }
+  .clubs{
+    margin: 50px;
+    padding: 50px;
+  }
+  
+  .dormlife{
+    margin: 50px;
+    padding: 50px;
+  }
+}
+
 @media screen and (max-width:720px) {
   .weekdays li, .days li {width: 13.1%;}
+  .bodytext{
+    font-size: 20px;
+  }
+  .subtitle {
+    font-size: 28px;
+  }
+  .clubs{
+    margin: 30px;
+    padding: 30px;
+  }
+  
+  .dormlife{
+    margin: 30px;
+    padding: 30px;
+  }
 }
 
 @media screen and (max-width: 420px) {
   .weekdays li, .days li {width: 12.5%;}
   .days li .active {padding: 2px;}
+  .bodytext{
+    font-size:17px;
+  }
+  .subtitle {
+    font-size: 25px;
+  }
+  .clubs{
+    margin: 25px;
+    padding: 25px;
+  }
+  
+  .dormlife{
+    margin: 25px;
+    padding: 25px;
+  }
 }
 
 @media screen and (max-width: 290px) {
   .weekdays li, .days li {width: 12.2%;}
-}
+  .bodytext{
+    font-size: 15px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .clubs{
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .dormlife{
+    margin: 20px;
+    padding: 20px;
+  }
+} 
