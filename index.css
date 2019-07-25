@@ -340,7 +340,7 @@ body{font-family: Verdana, sans-serif;}
 }
 
 .classtext {
-  font-size: 
+  font-size: 40px
 }
 
 @keyframes science{
@@ -367,6 +367,9 @@ body{font-family: Verdana, sans-serif;}
     margin: 70px;
     padding: 70px;
   }
+  .classtext {
+    font-size: 27px;
+  }
 }
 
 @media screen and (max-width:1000px) {
@@ -386,6 +389,10 @@ body{font-family: Verdana, sans-serif;}
     margin: 50px;
     padding: 50px;
   }
+
+  .classtext {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width:720px) {
@@ -404,6 +411,9 @@ body{font-family: Verdana, sans-serif;}
   .dormlife{
     margin: 30px;
     padding: 30px;
+  }
+  .classtext {
+    font-size: 20px;
   }
 }
 
@@ -425,6 +435,9 @@ body{font-family: Verdana, sans-serif;}
     margin: 25px;
     padding: 25px;
   }
+  .classtext {
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 290px) {
@@ -444,5 +457,8 @@ body{font-family: Verdana, sans-serif;}
   .dormlife{
     margin: 20px;
     padding: 20px;
+  }
+  .classtext {
+    font-size: 15px;
   }
 } 
