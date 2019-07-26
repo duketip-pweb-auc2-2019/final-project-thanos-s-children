@@ -99,10 +99,10 @@ body{font-family: Verdana, sans-serif;}
   color: #777;
 }
 
-.days li .active {
-  padding: 5px;
-  background: #458E45  ;
-  color: white !important
+.days li .active{
+  background: #458E45 !important ;
+  color: white !important;
+  padding:5px;
 }
 
 .eventrainy {
@@ -223,9 +223,7 @@ body{font-family: Verdana, sans-serif;}
   color: white;
 }
 
-.jumbotron{
 
-}
 
 #lightgrey {
   background-color: #DAE7F9;
@@ -320,6 +318,9 @@ body{font-family: Verdana, sans-serif;}
 .display-7{
   color:#AA2525
 }
+.hiyah{
+  color:gray
+}
 
 @keyframes math{
   0% {right:-100%}
@@ -349,6 +350,57 @@ body{font-family: Verdana, sans-serif;}
 @keyframes science{
   0% {left:-100%}
   25%{left: 0px}
+}
+
+.staff{
+  margin: auto;
+}
+
+.btn{
+  width: 100%;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 500px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #E6A98C;
+  color: white;
+  transform: rotateY(180deg);
 }
 
 /* Add media queries for smaller screens */

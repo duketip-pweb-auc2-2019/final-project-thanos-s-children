@@ -19,6 +19,7 @@ $(document).ready(function() {
     }
     console.log("ready!");
     $("li.list-group-item").click(hi); 
+    $(".days span").click(calendar)
   })
   $("div.math").css("display","none");
   $("div.math").removeClass("class1");
@@ -42,6 +43,10 @@ $(document).ready(function() {
 function hi() {
     $("li.list-group-item").removeClass("active");
     $(this).addClass("active");
+}
+function calendar() {
+  $(".days span").removeClass("active");
+  $(this).addClass("active");
 }
 
 $(window).on("load",function() {
